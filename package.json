@@ -1,0 +1,65 @@
+{
+  "name": "@profullstack/multiview",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Several live streams on one screen, driven by a mouse, a finger or a TV remote. Grid, per-tile player, solo sound, drag to rearrange, D-pad navigation and a Document Picture-in-Picture pop-out. Renders no markup and has no dependencies.",
+  "keywords": [
+    "multiview",
+    "video",
+    "grid",
+    "iptv",
+    "hls",
+    "mpegts",
+    "mse",
+    "media-source",
+    "picture-in-picture",
+    "document-picture-in-picture",
+    "fire-tv",
+    "silk",
+    "d-pad",
+    "television",
+    "remote",
+    "accessibility",
+    "player"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profullstack/multiview.git"
+  },
+  "homepage": "https://github.com/profullstack/multiview#readme",
+  "bugs": {
+    "url": "https://github.com/profullstack/multiview/issues"
+  },
+  "license": "MIT",
+  "author": "Profullstack, Inc.",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/multiview.js"
+    },
+    "./multiview.css": "./src/multiview.css",
+    "./package.json": "./package.json"
+  },
+  "types": "./index.d.ts",
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bun test",
+    "lint": "bun run --bun biome check .",
+    "format": "bun run --bun biome format --write ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.0"
+  }
+}
